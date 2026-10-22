@@ -1,72 +1,616 @@
-# 💊 Pharmacy Sales, Profitability & Operations Analytics Dashboard
+# 💊 Pharmacy Sales & Profitability Analytics
+### 📊 Interactive Excel Dashboard · MIS Reporting · Business Intelligence
 
-<div align="center">
+<p align="center">
+  <img src="https://img.shields.io/badge/Microsoft-Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Microsoft Excel"/>
+  <img src="https://img.shields.io/badge/Business-Analytics-0078D4?style=for-the-badge" alt="Business Analytics"/>
+  <img src="https://img.shields.io/badge/Interactive-Dashboard-00BCD4?style=for-the-badge" alt="Interactive Dashboard"/>
+  <img src="https://img.shields.io/badge/Reporting-MIS-7628FF?style=for-the-badge" alt="MIS Reporting"/>
+</p>
 
-![Dashboard Preview](https://github.com/SajeebTheAnalyst/pharmacy-sales-profitability-analytics/blob/main/Dashboard%20Image.png?raw=true)
-
-</div>
-
-<div align="center">
-
-[![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge&logo=appveyor)]()
-[![Excel](https://img.shields.io/badge/Tool-Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)]()
-[![Power Pivot](https://img.shields.io/badge/Engine-Power%20Pivot%20%2F%20DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)]()
-[![Author](https://img.shields.io/badge/Author-Mosaddek%20Hosen%20Sajeeb-blue?style=for-the-badge)]()
-
-</div>
-
----
-
-## 🎯 Executive Summary
-
-Welcome to the **Pharmacy Sales & Profitability Analytics** repository! This project features a C-Suite executive level, single-page interactive Excel Dashboard built to monitor, analyze, and optimize pharmacy chain performance across multiple European regions. 
-
-The primary objective is to bridge raw transactional data into actionable business intelligence, focusing on revenue trends, cost efficiencies, product profitability, regional dynamics, and promotional campaign effectiveness.
+<p align="center">
+  <b>Turning pharmacy sales data into meaningful business insights.</b>
+  <br/>
+  An Excel-based analytics project designed to evaluate revenue growth, profitability, product performance, and pharmacy-level business results across a European pharmacy chain.
+</p>
 
 ---
 
-## 📊 Key Performance Indicators (KPIs) Overview
+## 📸 Dashboard Preview
 
-* **Total Revenue:** €4.41M (+4.4% YoY Growth vs €4.22M PY)
-* **Total Cost:** €3.17M (+4.2% YoY Growth vs €3.04M PY)
-* **Net Profit:** €1.24M (+4.9% YoY Growth vs €1.18M PY)
-* **Profit Margin:** 28.11% (+0.1% YoY improvement)
-* **Total Transactions / Orders:** 31,827 (+5.0% YoY)
-* **Total Quantity Sold:** 227,991 Units (+4.7% YoY)
+<p align="center">
+  <img src="Dashboard%20Image.png" alt="Pharmacy Sales and Profitability Analytics Excel Dashboard" width="100%"/>
+</p>
 
----
-
-## 🚀 Key Dashboard Features & Sections
-
-1. **Executive KPI Header Cards:**
-   * Dynamic high-level performance cards displaying Current vs. Previous Year (PY) comparisons, growth percentages, and color-coded visual indicators.
-2. **Interactive Slicers & Global Filters:**
-   * Filter the entire dashboard dynamically by **Years (2024–2025)**, **Quarters (Q1–Q4)**, and **Product Categories (Medical Devices, OTC, Personal Care, Prescription, Wellness)**.
-3. **Monthly Revenue & Profitability Breakdown:**
-   * Visual dual-axis trend analysis tracking performance across all 12 months, highlighting seasonal sales peaks (notably May and December).
-4. **Geographic & Country-Wise Analysis:**
-   * Comprehensive breakdown of Revenue and Profit contributions across key markets including **Germany, France, Italy, Belgium, Netherlands, and Spain**.
-5. **Product & Pharmacy Performance Matrix:**
-   * Best & Worst performing products by brand/name (e.g., *SmileBright* and *AntiBioX* leading sales) alongside underperforming pharmacy locations flagged for operational review.
-6. **Promotional Impact Analysis:**
-   * Comparative analysis between **Promo vs. Non-Promo Revenue**, uncovering that non-promotional channels drive the vast majority of core retail volume (~89.8%), highlighting opportunities for targeted campaign optimization.
+<p align="center">
+  <i>Interactive Excel dashboard featuring KPI cards, monthly sales trends, product performance, geographic comparisons, pharmacy segmentation, and promotional sales analysis.</i>
+</p>
 
 ---
 
-## 🛠️ Technical Stack & Skills Applied
+## 📌 Table of Contents
 
-* **Primary Tool:** Microsoft Excel (Advanced Dashboards, Named Ranges, Pivot Tables, Conditional Formatting, Custom Number Formatting).
-* **Data Modeling & Engine:** Power Pivot, Data Modeling, relational schema management.
-* **Query Language:** **DAX (Data Analysis Expressions)** for calculated measures, YoY growth calculations, dynamic formatting, and time intelligence.
-* **Design Principles:** Dark-mode executive UI, visual hierarchy, consistent color grading (Cyan/Teal and Neon Purple accents), and clean grid alignment.
+- [Project Overview](#-project-overview)
+- [Business Objectives](#-business-objectives)
+- [Executive KPI Snapshot](#-executive-kpi-snapshot)
+- [Project Deliverables](#-project-deliverables)
+- [Dashboard Analysis](#-dashboard-analysis)
+- [MIS Reporting](#-management-information-system-mis-report)
+- [Data Model](#-data-model)
+- [Excel Skills and Techniques](#-excel-skills-and-techniques)
+- [Business Questions](#-key-business-questions)
+- [Analytical Insights](#-analytical-insights)
+- [Recommendations](#-business-recommendations)
+- [Project Structure](#-project-structure)
+- [How to Explore the Project](#-how-to-explore-the-project)
+- [Limitations and Validation](#-limitations-and-validation)
+- [Author](#-author)
 
 ---
 
-## 📂 Repository Structure
+## 🔎 Project Overview
+
+This project focuses on analyzing sales and profitability data from a European pharmacy chain operating across multiple countries, regions, and pharmacy locations.
+
+The objective is to transform transaction-level sales data into a structured Excel reporting solution that supports business performance monitoring and management decision-making.
+
+The project combines an interactive dashboard, a Management Information System (MIS) report, PivotTable-based analysis, and a written analytical summary.
+
+Rather than focusing exclusively on revenue, the analysis considers multiple dimensions of business performance, including cost, profit, margin, transaction volume, product categories, brands, geographic contribution, pharmacy types, and promotional activity.
+
+### 🎯 The Business Problem
+
+Pharmacy distributors need to understand more than how much they sell. They also need to identify where revenue originates, which products contribute to profitability, how individual pharmacies perform, and whether sales growth translates into stronger business results.
+
+This project addresses these needs through structured reporting and multidimensional analysis in Microsoft Excel.
+
+### 💡 Project Approach
+
+**Raw Sales Data → Data Model → Excel Analysis → MIS Reporting → Interactive Dashboard → Business Recommendations**
+
+The result is a consolidated reporting experience that helps stakeholders explore performance, compare business segments, identify areas requiring attention, and formulate data-driven questions.
+
+---
+
+## 🎯 Business Objectives
+
+The primary objectives of this project are to:
+
+- Monitor revenue, cost, profit, and profit margin.
+- Compare current-period performance against the prior year.
+- Analyze monthly revenue and profitability trends.
+- Identify high-performing and underperforming products.
+- Evaluate sales performance across countries and regions.
+- Compare pharmacy performance across Urban, Suburban, and Rural locations.
+- Examine promotional versus non-promotional sales.
+- Understand the contribution of individual pharmacies to overall business results.
+- Present key performance indicators through a visually structured dashboard.
+- Translate analytical observations into practical recommendations.
+
+---
+
+## 📈 Executive KPI Snapshot
+
+The following metrics are displayed in the Excel dashboard.
+
+<table>
+<thead>
+<tr>
+<th>Key Performance Indicator</th>
+<th>Reported Value</th>
+<th>Business Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>💶 Total Revenue</td>
+<td><b>€4.41M</b></td>
+<td>Measures overall sales value.</td>
+</tr>
+<tr>
+<td>💰 Total Cost</td>
+<td><b>€3.17M</b></td>
+<td>Tracks the costs included in the reporting model.</td>
+</tr>
+<tr>
+<td>📊 Total Profit</td>
+<td><b>€1.24M</b></td>
+<td>Measures reported profit generated by sales.</td>
+</tr>
+<tr>
+<td>📈 Profit Margin</td>
+<td><b>28.11%</b></td>
+<td>Measures profit relative to revenue.</td>
+</tr>
+<tr>
+<td>🧾 Transactions</td>
+<td><b>31,827</b></td>
+<td>Tracks reported transaction volume.</td>
+</tr>
+<tr>
+<td>📦 Quantity Sold</td>
+<td><b>227,991</b></td>
+<td>Measures the total quantity sold.</td>
+</tr>
+</tbody>
+</table>
+
+### Year-over-Year Performance
+
+| Metric | Reported YoY Change |
+|---|---:|
+| Revenue | +4.4% |
+| Cost | +4.2% |
+| Profit | +4.9% |
+| Profit Margin | +0.1%* |
+| Transactions | +5.0% |
+| Quantity Sold | +4.7% |
+
+These values are transcribed from the dashboard. The reporting period, comparison logic, and underlying calculations should be validated against the source workbook before these figures are used for formal business decisions.
+
+\* The displayed margin change requires clarification: it may represent a relative percentage change or a change in percentage points.
+
+---
+
+## 🧩 Project Deliverables
+
+### 1. Interactive Excel Dashboard
+
+A visually organized dashboard that consolidates essential performance indicators and charts into a single reporting interface.
+
+### 2. Management Information System (MIS) Report
+
+A detailed reporting page containing performance summary tables, monthly comparisons, product rankings, pharmacy results, and country-level breakdowns.
+
+### 3. PivotTable Analysis
+
+Supporting analysis designed to summarize sales data across different dimensions and answer focused business questions.
+
+### 4. Project Summary Report
+
+A written assessment of the reported metrics, analytical observations, improvement opportunities, and recommended next steps.
+
+### 5. Presentation
+
+A PowerPoint presentation summarizing the project objectives, KPI results, analysis priorities, and recommendations.
+
+---
+
+## 📊 Dashboard Analysis
+
+The dashboard is designed to provide a high-level view of pharmacy chain performance while bringing together multiple business dimensions.
+
+### 💳 1. KPI Performance Monitoring
+
+The dashboard highlights core business metrics:
+
+- Total Revenue
+- Total Profit
+- Profit Margin
+- Total Transactions
+- Quantity Sold
+- Prior-year comparisons and growth indicators
+
+**Business value:** Stakeholders can quickly assess the overall performance of the business without manually reviewing detailed transaction records.
+
+### 📅 2. Monthly Revenue and Profit Analysis
+
+The monthly analysis supports comparisons across the reporting period.
+
+It is intended to help identify:
+
+- Months with relatively high or low revenue.
+- Changes in monthly performance.
+- Differences between revenue and profit trends.
+- Periods requiring further investigation.
+- Potential recurring patterns that can be tested using multiple years of data.
+
+**Business value:** Monthly comparisons can support inventory planning, resource allocation, and further investigation into changes in demand.
+
+### 🌍 3. Geographic Performance Analysis
+
+The project examines performance across countries, regions, and individual pharmacy locations.
+
+The analysis focuses on:
+
+- Revenue contribution by country.
+- Profitability differences across markets.
+- Geographic distribution of business activity.
+- Regional performance comparisons.
+- Opportunities for country-to-pharmacy drill-down analysis.
+
+**Business value:** Geographic analysis helps identify where the business generates sales and where profitability deserves closer attention.
+
+### 🏷️ 4. Product and Brand Performance
+
+Product-level analysis compares sales volume, revenue, orders, and profit.
+
+The objective is to distinguish between products that sell frequently and products that contribute strongly to profitability.
+
+The analysis can support identification of:
+
+- High-revenue products.
+- High-volume products.
+- Products with relatively weak profitability.
+- Brands contributing to overall business performance.
+- Product segments requiring additional investigation.
+
+**Business value:** A combined volume-and-profitability view supports better product portfolio and inventory decisions.
+
+### 🏪 5. Pharmacy Type Analysis
+
+Pharmacies are segmented into:
+
+- Urban
+- Suburban
+- Rural
+
+The project compares performance across these location types using available sales and transaction measures.
+
+**Business value:** Segmentation helps reveal differences in business activity across pharmacy environments. Fair comparisons should also account for pharmacy size, operating days, and other relevant factors.
+
+### 🏷️ 6. Promotion Performance
+
+The dashboard includes a promoted versus non-promoted sales comparison.
+
+The analysis provides a starting point for examining differences in:
+
+- Revenue.
+- Quantity sold.
+- Transaction volume.
+- Profit.
+- Profit margin.
+
+**Business value:** Promotion analysis can help evaluate whether promotional activity is associated with commercially meaningful results.
+
+However, higher sales during promotions do not, by themselves, prove incremental sales or profit. Establishing promotional effectiveness requires a suitable baseline or comparison design.
+
+---
+
+## 📋 Management Information System (MIS) Report
+
+The MIS report complements the dashboard by providing more detailed tables and comparisons.
+
+Its purpose is to support performance monitoring, exception identification, and detailed inspection of business results.
+
+### MIS Components
+
+| Component | Analytical Purpose |
+|---|---|
+| Performance Summary | Compare current and prior-year KPIs. |
+| Monthly Revenue Analysis | Examine monthly revenue differences and growth. |
+| Revenue, Cost and Profit | Compare monthly financial performance. |
+| Country Revenue Breakdown | Examine geographic sales contribution. |
+| Best-Performing Products | Identify products with strong sales or profit. |
+| Underperforming Pharmacies | Identify locations requiring further investigation. |
+| Promotion Breakdown | Compare promoted and non-promoted results. |
+| Conditional Formatting | Highlight selected performance differences and exceptions. |
+
+### Dashboard vs. MIS Report
+
+The two reporting components serve complementary purposes.
+
+| Interactive Dashboard | MIS Report |
+|---|---|
+| High-level performance monitoring | Detailed tabular analysis |
+| Visual comparisons | Exact values and breakdowns |
+| KPI cards and charts | PivotTables and supporting summaries |
+| Quick identification of trends | Detailed inspection of individual results |
+| Decision-support overview | Operational reporting and follow-up |
+
+---
+
+## 🗂️ Data Model
+
+The dataset is organized into four tables representing sales transactions and supporting dimensions.
 
 ```text
-📦 pharmacy-sales-profitability-analytics
- ┣ 📂 Data               # Raw and processed transactional datasets
- ┣ 📂 Reports            # MIS Reports and Project Summary PDF
- ┣ 🖼️ Dashboard Image.png  # Main interactive dashboard preview screenshot
- ┗ 📄 README.md          # Comprehensive project documentation
+                 ┌─────────────────┐
+                 │    Dim Date     │
+                 └────────┬────────┘
+                          │
+                          ▼
+┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
+│  Dim Pharmacy   │──▶│   Fact Sales    │◀──│   Dim Product   │
+└─────────────────┘   └─────────────────┘   └─────────────────┘
+```
+
+The intended structure follows a dimensional modeling approach, with the sales fact table connected to the relevant dimensions.
+
+### 📅 Dim Date
+
+Provides calendar attributes for time-based analysis.
+
+Potential analytical uses include monthly comparisons, year-over-year calculations, and time-based performance monitoring.
+
+### 🏪 Dim Pharmacy
+
+Provides pharmacy-level and geographic attributes used to compare locations, regions, countries, and pharmacy types.
+
+### 💊 Dim Product
+
+Provides product attributes and hierarchy for analyzing product, brand, and category performance.
+
+### 🧾 Fact Sales
+
+Contains sales transaction records used to calculate the measures required for the dashboard and MIS report.
+
+**Modeling objective:** Establish consistent relationships between the fact table and dimension tables so that filters and calculations work across the relevant reporting dimensions.
+
+*The exact key columns and relationship cardinalities should be confirmed from the source workbook.*
+
+---
+
+## 🛠️ Excel Skills and Techniques
+
+This project demonstrates practical Excel-based data analysis and reporting skills.
+
+### 1. PivotTables
+
+PivotTables support flexible aggregation and comparison of sales data by dimensions such as month, country, pharmacy, product, and promotion status.
+
+### 2. PivotCharts and Data Visualization
+
+Charts communicate performance patterns and comparisons through visual summaries.
+
+The project uses visual reporting to make financial and operational information easier to interpret.
+
+### 3. Excel Formulas and Calculations
+
+Calculated metrics support financial summaries and performance comparisons.
+
+Relevant formulas for this type of analysis include:
+
+- `SUM` — aggregate numerical values.
+- `SUMIFS` — calculate totals using multiple criteria.
+- `COUNTIFS` — count records that meet specified conditions.
+- `IF` — implement conditional logic.
+- `IFERROR` — handle formula errors.
+- `XLOOKUP` — retrieve matching values from a lookup table.
+- `VLOOKUP` — perform traditional lookup operations.
+- Percentage change calculations — compare current performance with prior periods.
+
+These are relevant techniques for the project; individual formulas should only be claimed as implemented where they are present in the workbook.
+
+### 4. KPI Analysis
+
+The reporting solution uses financial and operational measures to summarize performance.
+
+Examples include revenue, profit, profit margin, transaction volume, and quantity sold.
+
+### 5. Year-over-Year Analysis
+
+Year-over-year comparisons help evaluate changes relative to a corresponding prior-year period.
+
+A standard growth calculation is:
+
+\[
+\text{YoY Growth (\%)} =
+\frac{\text{Current Period}-\text{Prior Year}}
+{\text{Prior Year}}\times100
+\]
+
+The current and prior-year periods must use consistent definitions and comparable date ranges.
+
+### 6. Conditional Formatting
+
+Conditional formatting can highlight values that require investigation, including selected low-performing results and unusually large differences.
+
+### 7. Dashboard Design
+
+The dashboard uses KPI cards, charts, consistent formatting, and a dark navy, cyan, and purple visual theme.
+
+The design objective is to maintain a clear visual hierarchy while keeping important performance information easy to locate.
+
+---
+
+## ❓ Key Business Questions
+
+The analysis is structured around the following business questions.
+
+### Revenue and Profitability
+
+- How do revenue, units sold, and margin change over time?
+- Which months have the highest and lowest reported revenue?
+- Does profit grow faster or slower than revenue?
+- How does profit margin vary across reporting periods?
+
+### Geography
+
+- Which countries contribute the most revenue?
+- Which countries contribute the most profit?
+- How does performance vary from country to region to pharmacy?
+- Are high-revenue markets also high-margin markets?
+
+### Pharmacy Performance
+
+- Which pharmacies perform strongly within their regions?
+- Which pharmacies underperform relative to comparable locations?
+- How do Urban, Suburban, and Rural pharmacies differ?
+- Do performance rankings change when normalized for pharmacy size or activity?
+
+### Product and Brand Performance
+
+- Which product categories and brands generate the most revenue?
+- Which products generate the most profit?
+- Which products combine high sales volume with relatively low margins?
+- Which products have strong margins but comparatively low volume?
+
+### Promotional Performance
+
+- How do promoted and non-promoted sales compare?
+- Are promotional products generating sufficient profit?
+- Do discounts reduce margin materially?
+- Is there evidence of incremental profitable demand after accounting for a suitable baseline?
+
+---
+
+## 🔍 Analytical Insights and Interpretation
+
+The available dashboard and MIS screenshots provide several useful starting points for investigation.
+
+### 1. Revenue and Profit Show Positive Reported Growth
+
+Revenue is displayed at €4.41M, with reported year-over-year growth of 4.4%. Profit is displayed at €1.24M, with reported growth of 4.9%.
+
+Profit growth is slightly higher than revenue growth in the displayed summary.
+
+**Analytical follow-up:** Examine product mix, pricing, discounting, and cost components to determine what explains the difference.
+
+### 2. Monthly Revenue Fluctuates
+
+The visible monthly MIS table reports approximately €329.1K in February and €392.7K in May.
+
+These values indicate variation across the displayed reporting period.
+
+**Analytical follow-up:** Compare monthly results across multiple years before concluding that the pattern represents recurring seasonality.
+
+### 3. Product Rankings Need a Profitability Perspective
+
+The MIS contains product-level orders, quantity, revenue, and profit.
+
+A product with high revenue may not necessarily have the strongest margin.
+
+**Analytical follow-up:** Compare units sold, revenue, profit, margin percentage, and profit per unit together.
+
+### 4. Pharmacy Comparisons Require Context
+
+The project includes pharmacy-level performance and pharmacy-type segmentation.
+
+Raw sales totals alone may favor larger or busier locations.
+
+**Analytical follow-up:** Compare pharmacies against regional and location-type peers, using normalized measures where suitable.
+
+### 5. Promotional Sales Require Further Evaluation
+
+The displayed promotional breakdown helps compare promoted and non-promoted activity.
+
+However, descriptive differences cannot establish that promotions caused additional profit.
+
+**Analytical follow-up:** Examine discounts, margin, profit per unit, and an appropriate comparison baseline.
+
+> **Evidence note:** These are initial analytical observations based on the displayed screenshots. They should not be interpreted as verified causal findings. The underlying workbook is required to validate calculations and investigate the reasons behind observed performance.
+
+---
+
+## 💼 Business Recommendations
+
+Based on the available reporting structure, the following improvements would make the analysis more actionable.
+
+### Priority 1 — Validate KPI Definitions
+
+Document how revenue, cost, profit, profit margin, orders, transactions, and quantity sold are calculated.
+
+Reconcile the dashboard and MIS totals against the source data.
+
+### Priority 2 — Strengthen Year-over-Year Comparisons
+
+Use consistent date ranges and clearly documented comparison logic.
+
+Ensure that growth indicators are calculated using the same business definitions throughout the workbook.
+
+### Priority 3 — Benchmark Pharmacy Performance
+
+Compare each pharmacy with similar locations in its region and pharmacy type.
+
+Include revenue, profit, margin, and appropriate normalized measures to identify locations requiring investigation.
+
+### Priority 4 — Build a Product Profitability Matrix
+
+Compare units sold against profit margin, using revenue as an additional measure of commercial significance.
+
+This can help distinguish high-volume, low-margin products from lower-volume, high-margin opportunities.
+
+### Priority 5 — Evaluate Promotion Profitability
+
+Compare promotional and non-promotional results using profit, margin, discount levels, and a suitable baseline.
+
+Avoid judging promotional effectiveness using revenue or volume alone.
+
+### Priority 6 — Improve Dashboard Usability
+
+Maintain consistent currency formatting, readable chart labels, clear legends, and meaningful KPI definitions.
+
+Ensure that filters and comparisons remain consistent across the dashboard and MIS report.
+
+---
+
+## 📁 Project Structure
+
+The repository is intended to contain the following deliverables:
+
+```text
+pharmacy-sales-profitability-analytics/
+│
+├── README.md
+├── Dashboard Image.png
+├── Pharmacy Sales Analysis Excel Project.xlsx
+├── Pharmacy_Sales_Analytics_Project_Summary.pdf
+└── Pharmacy_Sales_Analytics_Presentation.pptx
+```
+
+*The filenames shown above are suggested names. Update this section if the actual uploaded filenames differ.*
+
+---
+
+## 🚀 How to Explore the Project
+
+1. Open the Excel workbook in Microsoft Excel.
+2. Navigate to the Dashboard sheet to review the high-level performance indicators and charts.
+3. Explore the MIS Report sheet for detailed monthly, product, pharmacy, and geographic summaries.
+4. Open the Pivot Analysis sheet to inspect the supporting aggregations.
+5. Review the PDF project summary for the interpretation and recommended improvements.
+6. Review the PowerPoint presentation for a concise overview of the project and its business implications.
+
+For interactive exploration, use the workbook's available filters and PivotTable controls. Some functionality may depend on the workbook's configuration and the version of Excel used.
+
+---
+
+## ⚠️ Limitations and Validation
+
+This project is intended as an analytical reporting and portfolio demonstration.
+
+Before using the results for operational or financial decisions, validate the following:
+
+- Source data completeness and accuracy.
+- Fact-to-dimension relationships.
+- Revenue, cost, profit, and margin definitions.
+- Current-period and prior-year date ranges.
+- Consistency between dashboard and MIS calculations.
+- The meaning of Orders versus Transactions.
+- Promotion definitions and discount treatment.
+- The comparability of pharmacies across different locations.
+- Whether apparent monthly patterns recur across multiple years.
+
+The screenshots provide reported figures and visible summaries, but they do not establish the underlying causes of performance changes.
+
+---
+
+## 👨‍💻 About the Analyst
+
+**Sajeeb — Data Analyst & AI Automation Specialist**
+
+I work on data analysis, business reporting, dashboard development, and automation solutions designed to turn raw information into practical insights.
+
+My broader technical interests include:
+
+- Microsoft Excel and Power BI
+- SQL and PostgreSQL
+- Python for data analysis and cleaning
+- Business intelligence and KPI reporting
+- Workflow automation using n8n and related tools
+
+### Connect With Me
+
+<p>
+  <a href="https://sajeeb-the-analyst.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-Visit%20Website-00BCD4?style=for-the-badge" alt="Portfolio"/></a>
+  <a href="https://www.linkedin.com/in/sajeeb-the-analyst/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+</p>
+
+---
+
+<p align="center">
+  <b>Turning Data Into Decisions.</b>
+  <br/>
+  <sub>Pharmacy Sales & Profitability Analytics · Microsoft Excel</sub>
+</p>
